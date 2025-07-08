@@ -1,165 +1,1327 @@
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>RMKBeauty</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" type="image/x-icon" href="images/ryleehead.jpg">
-	</head>
-	<body class="is-preload">
+<html lang="en">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title>Glammed By Kira</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="icon" type="image/x-icon" href="images/logo_landing_page.png">
+	<style>
+		:root {
+			--primary: #8a5a7c;
+			--primary-light: #b88ca0;
+			--accent: #d4a5a5;
+			--accent-light: #f3e1e1;
+			--light: #f9f4f4;
+			--dark: #3a2e3a;
+			--gold: #d4c19c;
+			--transition: all 0.3s ease;
+		}
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/cosmetics.png" alt="Makeup Logo" /></span>
-						<h1>Rylee Marie Knechtle Makeup</h1>
-						<p>Local Vancouver Mobile Makeup Artist</p>
-					</header>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">My Services</a></li>
-							<li><a href="#second">Portfolio</a></li>
-							<li><a href="#cta">Get Started</a></li>
-						</ul>
-					</nav>
+		body {
+			font-family: 'Montserrat', sans-serif;
+			color: var(--dark);
+			background-color: var(--light);
+			line-height: 1.6;
+			overflow-x: hidden;
+		}
 
-				<!-- Main -->
-					<div id="main">
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: 'Playfair Display', serif;
+			font-weight: 600;
+			color: var(--dark);
+			letter-spacing: 0.5px;
+		}
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Hi, I'm Rylee,<br>Your Next Makeup Artist!</h2>
-										</header>
-										<p>I'm a Vancouver based freelance makeup artist who graduated from John Casablancas Institute in 2019!</p>
-										<p>I'm here to help you feel and look your best for any occasion. Scroll to learn more!</p>
-										<ul class="actions">
-											<li><a href="#cta" class="button primary">Get Started</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/ryleehead.jpg" alt="" /></span>
-								</div>
-							</section>
+		/* Header Styles */
+		.header-container {
+			background: linear-gradient(135deg, rgba(138, 90, 124, 0.9) 0%, rgba(180, 140, 160, 0.8) 100%), url('https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?ixlib=rb-4.0.3') center/cover;
+			height: 100vh;
+			min-height: 700px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			color: white;
+			padding: 20px;
+			position: relative;
+			overflow: hidden;
+		}
 
-						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>My Services</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-ring"></span>
-										<h3>Wedding Makeup</h3>
-										<p>Please contact for more information! I provide bridal makeup packages alongside bridesmaids packages.</p>
-									</li>
-									<li>
-										<span class="icon major style3 fa-calendar"></span>
-										<h3>Event Makeup</h3>
-										<p>Looking to get glammed up for your next girls night out or gruadtion? I got you covered!</p>
-									</li>
-									<li>
-										<span class="icon major style5 fa-comment"></span>
-										<h3>1 on 1 Consulting</h3>
-										<p>I'll provide lessons for anyone looking to learn the basics of makeup! I'll teach the latest styles, techniques, and how to use your makeup!</p>
-									</li>
-								</ul>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="#cta" class="button primary">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+		.header-container::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: radial-gradient(circle at center, transparent 0%, rgba(58, 46, 58, 0.7) 100%);
+			z-index: 0;
+		}
 
-						<!-- portfolio -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Portfolio</h2>
-									<p>Feel free to scroll through my latest makeup looks!</p>
-								</header>
-								<div class="box alt">
-									<div class="row gtr-uniform">
-										<div class="col-4"><span class="image fit"><a href="https://www.instagram.com/p/CUYLLDXP4Nm/"><img src="images/portfolio1.jpg" alt="" /></a></span></div>
-										<div class="col-4"><span class="image fit"><a href="https://www.instagram.com/p/CUYLLDXP4Nm/"><img src="images/portfolio2.jpg" alt="" /></a></span></div>
-										<div class="col-4"><span class="image fit"><a href="https://www.instagram.com/rmkmua/"><img src="images/portfolio3.jpg" alt="" /></a></span></div>
-										<div class="col-4"><span class="image fit"><a href="https://www.instagram.com/p/CTpvs8vvSt4/"><img src="images/portfolio4.jpg" alt="" /></a></span></div>
-										<div class="col-4"><span class="image fit"><a href="https://www.instagram.com/p/CT8Fp-Cvh7o/"><img src="images/portfolio5.jpg" alt="" /></a></span></div>
-										<div class="col-4"><span class="image fit"><a href="https://www.instagram.com/p/CT8Fp-Cvh7o/"><img src="images/portfolio6.jpg" alt="" /></a></span></div>
-									</div>
-								</div>
-								
-									<ul class="actions special">
-										<li><a href="#cta" class="button primary">Get Started with Me Today!</a></li>
-									</ul>
-								</footer>
-							</section>
+		.logo-container {
+			position: relative;
+			z-index: 2;
+			margin-bottom: 30px;
+		}
 
-						
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Contact Me!</h2>
-									<p>Ready to look your best? Contact me below!</p>
-								</header>
-								<form name="contact" method="POST" data-netlify="true">
-									<p class="formSmall">
-									  <label>Your Name: <input type="text" name="name" /></label>
-									  <label>Your Email: <input type="email" name="email" /></label>
-									</p>
-									  
-									<p>
-									  <label>Message: <textarea name="message"></textarea></label>
-									</p>
-									<p>
-									  <input type="submit" value="Send Message" class="primary">
-									</p>
-								  </form>
-							</section>
+		.logo-container img {
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			border: 3px solid var(--gold);
+			padding: 5px;
+			background: rgba(255, 255, 255, 0.1);
+			backdrop-filter: blur(5px);
+		}
 
-					</div>
+		.header-content {
+			position: relative;
+			z-index: 2;
+			max-width: 800px;
+		}
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Ready to Look Your Best?</h2>
-							<p>Connect with me either through my socials, or by filling out the contact form found above!</p>
-							<ul class="actions">
-								<li><a href="#cta" class="button primary">Contact Me</a></li>
-							</ul>
-						</section>
-						<section>
-							<h2>Get In Touch With Me!</h2>
-							<ul class="icons">
-								<li><a href="https://www.facebook.com/RyleeMarieMakeup/" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/rmkmua/" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="mailto:ryleemariemakeup@gmail.com" class="icon fa-envelope alt"><span class="label">Facebook</span></a></li>
-							</ul>
-						</section>
-						
+		.header-content h1 {
+			font-size: 4rem;
+			margin-bottom: 15px;
+			color: white;
+			text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+		}
 
+		.header-content p {
+			font-size: 1.5rem;
+			margin-bottom: 30px;
+			font-weight: 300;
+			max-width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.btn {
+			display: inline-block;
+			background: var(--accent);
+			color: white;
+			padding: 15px 35px;
+			border-radius: 50px;
+			text-decoration: none;
+			font-weight: 500;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			transition: var(--transition);
+			border: 2px solid var(--accent);
+			font-size: 1rem;
+			margin: 10px;
+		}
+
+		.btn:hover {
+			background: transparent;
+			color: white;
+			transform: translateY(-3px);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+		}
+
+		.btn-outline {
+			background: transparent;
+			border: 2px solid white;
+		}
+
+		.btn-outline:hover {
+			background: white;
+			color: var(--primary);
+		}
+
+		/* Navigation */
+		nav {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 1000;
+			background: rgba(255, 255, 255, 0.95);
+			box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+			padding: 15px 0;
+			transition: var(--transition);
+		}
+
+		.nav-container {
+			max-width: 1200px;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 20px;
+		}
+
+		.nav-logo {
+			font-family: 'Playfair Display', serif;
+			font-size: 1.8rem;
+			color: var(--primary);
+			font-weight: 700;
+			text-decoration: none;
+		}
+
+		.nav-logo span {
+			color: var(--accent);
+		}
+
+		.nav-links {
+			display: flex;
+			list-style: none;
+		}
+
+		.nav-links li {
+			margin-left: 30px;
+		}
+
+		.nav-links a {
+			text-decoration: none;
+			color: var(--dark);
+			font-weight: 500;
+			font-size: 1rem;
+			position: relative;
+			padding: 5px 0;
+			transition: var(--transition);
+		}
+
+		.nav-links a:after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0;
+			height: 2px;
+			background: var(--accent);
+			transition: var(--transition);
+		}
+
+		.nav-links a:hover {
+			color: var(--primary);
+		}
+
+		.nav-links a:hover:after {
+			width: 100%;
+		}
+
+		.mobile-menu-btn {
+			display: none;
+			background: none;
+			border: none;
+			font-size: 1.5rem;
+			color: var(--dark);
+			cursor: pointer;
+		}
+
+		/* Section Styling */
+		section {
+			padding: 100px 20px;
+		}
+
+		.section-header {
+			text-align: center;
+			max-width: 700px;
+			margin: 0 auto 60px;
+		}
+
+		.section-header h2 {
+			font-size: 2.8rem;
+			margin-bottom: 20px;
+			position: relative;
+			display: inline-block;
+		}
+
+		.section-header h2:after {
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 80px;
+			height: 3px;
+			background: var(--accent);
+		}
+
+		.section-header p {
+			font-size: 1.1rem;
+			color: #666;
+			margin-top: 25px;
+		}
+
+		/* About Section */
+		.about {
+			background: white;
+		}
+
+		.about-container {
+			max-width: 1200px;
+			margin: 0 auto;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 60px;
+			align-items: center;
+		}
+
+		.about-image {
+			position: relative;
+			border-radius: 15px;
+			overflow: hidden;
+			box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+		}
+
+		.about-image img {
+			width: 100%;
+			height: auto;
+			display: block;
+			transition: var(--transition);
+		}
+
+		.about-image:hover img {
+			transform: scale(1.05);
+		}
+
+		.about-content h2 {
+			font-size: 2.5rem;
+			margin-bottom: 25px;
+		}
+
+		.about-content p {
+			margin-bottom: 20px;
+			font-size: 1.1rem;
+		}
+
+		.signature {
+			font-family: 'Playfair Display', serif;
+			font-style: italic;
+			color: var(--primary);
+			margin-top: 30px;
+			font-size: 1.2rem;
+			position: relative;
+			padding-left: 100px;
+		}
+
+		.signature:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			width: 80px;
+			height: 2px;
+			background: var(--accent);
+		}
+
+		/* Services Section */
+		.services {
+			background: linear-gradient(to bottom, var(--light) 0%, #f0e6e6 100%);
+			position: relative;
+			overflow: hidden;
+		}
+
+		.services:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 200px;
+			background: white;
+			transform: skewY(-2deg);
+			transform-origin: top left;
+		}
+
+		.services-container {
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		.services-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 30px;
+			margin-top: 40px;
+		}
+
+		.service-card {
+			background: white;
+			border-radius: 15px;
+			overflow: hidden;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+			transition: var(--transition);
+			text-align: center;
+			padding: 40px 30px;
+		}
+
+		.service-card:hover {
+			transform: translateY(-10px);
+			box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+		}
+
+		.service-icon {
+			width: 80px;
+			height: 80px;
+			background: var(--accent-light);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0 auto 25px;
+			color: var(--primary);
+			font-size: 2rem;
+		}
+
+		.service-card h3 {
+			font-size: 1.6rem;
+			margin-bottom: 15px;
+			color: var(--primary);
+		}
+
+		.service-card p {
+			margin-bottom: 20px;
+			color: #666;
+		}
+
+		.service-price {
+			font-size: 1.8rem;
+			color: var(--primary);
+			font-weight: 600;
+			margin: 20px 0;
+			font-family: 'Playfair Display', serif;
+		}
+
+		.service-price span {
+			font-size: 1rem;
+			color: #888;
+			font-weight: normal;
+		}
+
+		/* Portfolio Section */
+		.portfolio {
+			background: white;
+		}
+
+		.portfolio-container {
+			max-width: 1400px;
+			margin: 0 auto;
+		}
+
+		.portfolio-filter {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin-bottom: 40px;
+		}
+
+		.filter-btn {
+			background: transparent;
+			border: none;
+			padding: 8px 20px;
+			margin: 5px;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1rem;
+			cursor: pointer;
+			color: var(--dark);
+			border-radius: 30px;
+			transition: var(--transition);
+		}
+
+		.filter-btn.active,
+		.filter-btn:hover {
+			background: var(--primary);
+			color: white;
+		}
+
+		.portfolio-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+			gap: 25px;
+		}
+
+		.portfolio-item {
+			border-radius: 15px;
+			overflow: hidden;
+			position: relative;
+			height: 300px;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+		}
+
+		.portfolio-item img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: var(--transition);
+		}
+
+		.portfolio-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(138, 90, 124, 0.85);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			opacity: 0;
+			transition: var(--transition);
+			padding: 20px;
+			text-align: center;
+			color: white;
+		}
+
+		.portfolio-item:hover .portfolio-overlay {
+			opacity: 1;
+		}
+
+		.portfolio-item:hover img {
+			transform: scale(1.1);
+		}
+
+		.portfolio-overlay h3 {
+			font-size: 1.5rem;
+			margin-bottom: 10px;
+			transform: translateY(20px);
+			transition: var(--transition);
+		}
+
+		.portfolio-overlay p {
+			transform: translateY(20px);
+			opacity: 0;
+			transition: var(--transition);
+			transition-delay: 0.1s;
+			max-width: 300px;
+		}
+
+		.portfolio-item:hover .portfolio-overlay h3,
+		.portfolio-item:hover .portfolio-overlay p {
+			transform: translateY(0);
+			opacity: 1;
+		}
+
+		/* Contact Section */
+		.contact {
+			background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+			color: white;
+			position: relative;
+		}
+
+		.contact:before {
+			content: '';
+			position: absolute;
+			top: -100px;
+			left: 0;
+			right: 0;
+			height: 200px;
+			background: white;
+			transform: skewY(2deg);
+			transform-origin: top right;
+		}
+
+		.section-header.light h2,
+		.section-header.light p {
+			color: white;
+		}
+
+		.section-header.light h2:after {
+			background: var(--gold);
+		}
+
+		.contact-container {
+			max-width: 900px;
+			margin: 0 auto;
+			position: relative;
+			z-index: 2;
+		}
+
+		.contact-form {
+			background: rgba(255, 255, 255, 0.1);
+			backdrop-filter: blur(10px);
+			border-radius: 20px;
+			padding: 50px;
+			box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+			border: 1px solid rgba(255, 255, 255, 0.2);
+		}
+
+		.form-grid {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 25px;
+			margin-bottom: 25px;
+		}
+
+		.form-group {
+			margin-bottom: 20px;
+		}
+
+		.form-group.full {
+			grid-column: span 2;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 8px;
+			font-weight: 500;
+		}
+
+		input,
+		select,
+		textarea {
+			width: 100%;
+			padding: 15px;
+			border: none;
+			background: rgba(255, 255, 255, 0.15);
+			border-radius: 10px;
+			color: white;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 1rem;
+			transition: var(--transition);
+			border: 1px solid transparent;
+		}
+
+		
+
+		input:focus,
+		select:focus,
+		textarea:focus {
+			outline: none;
+			background: rgba(255, 255, 255, 0.25);
+			border-color: var(--gold);
+		}
+
+		select:focus{
+			color:  black;
+		}
+
+		textarea {
+			min-height: 150px;
+			resize: vertical;
+		}
+
+		::placeholder {
+			color: rgba(255, 255, 255, 0.7);
+		}
+
+		.submit-btn {
+			background: var(--gold);
+			color: var(--dark);
+			border: none;
+			padding: 16px 40px;
+			font-size: 1.1rem;
+			font-weight: 600;
+			border-radius: 50px;
+			cursor: pointer;
+			transition: var(--transition);
+			display: block;
+			margin: 30px auto 0;
+			width: fit-content;
+			font-family: 'Montserrat', sans-serif;
+		}
+
+		.submit-btn:hover {
+			background: white;
+			transform: translateY(-3px);
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+		}
+
+		/* Footer */
+		footer {
+			background: var(--dark);
+			color: rgba(255, 255, 255, 0.7);
+			padding: 80px 0 30px;
+			position: relative;
+		}
+
+		.footer-container {
+			max-width: 1200px;
+			margin: 0 auto;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 60px;
+			padding: 0 20px;
+		}
+
+		.footer-about h3 {
+			color: white;
+			font-size: 1.8rem;
+			margin-bottom: 25px;
+			position: relative;
+			display: inline-block;
+		}
+
+		.footer-about h3:after {
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			width: 50px;
+			height: 2px;
+			background: var(--accent);
+		}
+
+		.footer-about p {
+			margin-bottom: 25px;
+			max-width: 500px;
+		}
+
+		.social-links {
+			display: flex;
+			gap: 15px;
+		}
+
+		.social-links a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 45px;
+			height: 45px;
+			background: rgba(255, 255, 255, 0.1);
+			border-radius: 50%;
+			color: white;
+			font-size: 1.2rem;
+			transition: var(--transition);
+		}
+
+		.social-links a:hover {
+			background: var(--accent);
+			transform: translateY(-5px);
+		}
+
+		.footer-contact h3 {
+			color: white;
+			font-size: 1.8rem;
+			margin-bottom: 25px;
+			position: relative;
+			display: inline-block;
+		}
+
+		.footer-contact h3:after {
+			content: '';
+			position: absolute;
+			bottom: -10px;
+			left: 0;
+			width: 50px;
+			height: 2px;
+			background: var(--accent);
+		}
+
+		.contact-info {
+			list-style: none;
+		}
+
+		.contact-info li {
+			margin-bottom: 15px;
+			display: flex;
+			align-items: center;
+		}
+
+		.contact-info i {
+			margin-right: 15px;
+			color: var(--accent);
+			font-size: 1.2rem;
+			width: 25px;
+		}
+
+		.copyright {
+			text-align: center;
+			padding-top: 40px;
+			margin-top: 40px;
+			border-top: 1px solid rgba(255, 255, 255, 0.1);
+			grid-column: span 2;
+		}
+
+		/* Mobile Responsiveness Improvements */
+		@media (max-width: 992px) {
+			.about-container {
+				grid-template-columns: 1fr;
+				gap: 40px;
+			}
+
+			.about-image {
+				max-width: 600px;
+				margin: 0 auto;
+			}
+
+			.form-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.form-group.full {
+				grid-column: span 1;
+			}
+
+			.footer-container {
+				grid-template-columns: 1fr;
+			}
+
+			.copyright {
+				grid-column: span 1;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.header-content h1 {
+				font-size: 3rem;
+			}
+
+			.header-content p {
+				font-size: 1.2rem;
+			}
+
+			.nav-links {
+				position: fixed;
+				top: 80px;
+				left: 0;
+				right: 0;
+				background: white;
+				flex-direction: column;
+				align-items: center;
+				padding: 30px 0;
+				box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+				clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+				transition: var(--transition);
+			}
+
+			.nav-links.active {
+				clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+			}
+
+			.nav-links li {
+				margin: 15px 0;
+			}
+
+			.mobile-menu-btn {
+				display: block;
+			}
+
+			.section-header h2 {
+				font-size: 2.3rem;
+			}
+
+			.contact-form {
+				padding: 30px;
+			}
+
+			/* FIX: Services section top skew on mobile */
+			.services:before {
+				height: 120px;
+				transform: skewY(-3deg);
+			}
+
+			/* FIX: Contact section top skew on mobile */
+			.contact:before {
+				height: 120px;
+				top: -60px;
+				transform: skewY(3deg);
+			}
+
+			/* FIX: Improve section header spacing on mobile */
+			.section-header {
+				margin: 0 auto 40px;
+			}
+
+			.section-header h2 {
+				font-size: 2.2rem;
+			}
+
+			.section-header p {
+				font-size: 1rem;
+				margin-top: 15px;
+			}
+		}
+
+		@media (max-width: 576px) {
+			section {
+				padding: 70px 20px;
+			}
+
+			.header-content h1 {
+				font-size: 2.5rem;
+			}
+
+			.btn {
+				padding: 12px 25px;
+				font-size: 0.9rem;
+			}
+
+			.about-content h2 {
+				font-size: 2rem;
+			}
+
+			.service-card {
+				padding: 30px 20px;
+			}
+
+			.contact-form {
+				padding: 20px 15px;
+			}
+
+			/* FIX: Services section top skew on small mobile */
+			.services:before {
+				height: 80px;
+				transform: skewY(-4deg);
+			}
+
+			/* FIX: Contact section top skew on small mobile */
+			.contact:before {
+				height: 80px;
+				top: -40px;
+				transform: skewY(4deg);
+			}
+
+			/* FIX: Improve portfolio filtering buttons on mobile */
+			.portfolio-filter {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.filter-btn {
+				width: 100%;
+				max-width: 200px;
+				margin: 5px 0;
+			}
+
+			/* FIX: Center align section headers on mobile */
+			.section-header h2 {
+				text-align: center;
+				width: 100%;
+			}
+
+			.section-header h2:after {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			/* FIX: Adjust service card padding on mobile */
+			.service-card {
+				padding: 25px 15px;
+			}
+
+			.service-icon {
+				width: 70px;
+				height: 70px;
+				font-size: 1.8rem;
+			}
+
+			.service-card h3 {
+				font-size: 1.4rem;
+			}
+
+			.service-price {
+				font-size: 1.5rem;
+			}
+
+			/* FIX: Contact form input sizes */
+			input,
+			select,
+			textarea {
+				padding: 12px;
+				font-size: 0.95rem;
+			}
+		}
+
+		@media (max-width: 480px) {
+
+			/* FIX: Header height on very small screens */
+			.header-container {
+				min-height: 600px;
+			}
+
+			.header-content h1 {
+				font-size: 2.2rem;
+			}
+
+			.header-content p {
+				font-size: 1.1rem;
+			}
+
+			/* FIX: Reduce section padding on very small screens */
+			section {
+				padding: 50px 15px;
+			}
+
+			/* FIX: Portfolio grid on very small screens */
+			.portfolio-grid {
+				grid-template-columns: 1fr;
+			}
+
+			/* FIX: Center align buttons in header */
+			.header-btns {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.btn {
+				margin: 8px 0;
+				width: 100%;
+				max-width: 250px;
+			}
+
+			/* FIX: Signature alignment on mobile */
+			.signature {
+				padding-left: 60px;
+			}
+
+			.signature:before {
+				width: 50px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Navigation -->
+	<nav id="nav">
+		<div class="nav-container">
+			<a href="#" class="nav-logo">Glammed<span>ByKira</span></a>
+			<button class="mobile-menu-btn">
+				<i class="fas fa-bars"></i>
+			</button>
+			<ul class="nav-links">
+				<li><a href="#about" class="active">Me</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Get Started</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Header -->
+	<header id="header" class="header-container">
+		<div class="logo-container">
+			<img src="images/makeup_vector.png" alt="Makeup Logo">
+		</div>
+		<div class="header-content">
+			<h1>Kira Gallaimova Makeup</h1>
+			<p>Professional Makeup Artist in Toronto</p>
+			<div class="header-btns">
+				<a href="#contact" class="btn">Book Your Session</a>
+				<a href="#portfolio" class="btn btn-outline">View Portfolio</a>
+			</div>
+		</div>
+	</header>
+
+	<!-- About Section -->
+	<section id="about" class="about">
+		<div class="about-container">
+			<div class="about-image">
+				<img src="images/kira_headshot.jpg" alt="Kira Gallaimova">
+			</div>
+			<div class="about-content">
+				<h2>Hey, I'm Kira —<br>Your Go-To Makeup Artist in Toronto!</h2>
+				<p>✨ A proud graduate of the Seneca Polytechnic (2025), I bring passion, precision, and a touch of magic
+					to every look I create.</p>
+				<p>Whether it's your wedding day, a photoshoot, or a night out, I'm here to help you feel confident,
+					radiant, and unforgettable. Let’s create something beautiful together!</p>
+				<a href="#contact" class="btn" style="background: var(--primary);">Book Your Glow-Up</a>
+				<div class="signature">Kira Gallaimova</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Services Section -->
+	<section id="services" class="services">
+		<div class="services-container">
+			<div class="section-header">
+				<h2>My Services</h2>
+				<p>Professional makeup services tailored to your special occasion</p>
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<div class="services-grid">
+				<div class="service-card">
+					<div class="service-icon">
+						<i class="fas fa-ring"></i>
+					</div>
+					<h3>Wedding Makeup</h3>
+					<p>Please contact for more information! I provide bridal makeup packages alongside bridesmaids
+						packages.</p>
+					<div class="service-price">From $80<span> / bride</span></div>
+				</div>
 
-	</body>
+				<div class="service-card">
+					<div class="service-icon">
+						<i class="fas fa-calendar"></i>
+					</div>
+					<h3>Event Makeup</h3>
+					<p>Looking to get glammed up for your next girls night out or graduation? I got you covered!</p>
+					<div class="service-price">From $80<span> / session</span></div>
+				</div>
+
+				<div class="service-card">
+					<div class="service-icon">
+						<i class="fas fa-comment"></i>
+					</div>
+					<h3>1 on 1 Consulting</h3>
+					<p>I'll provide lessons for anyone looking to learn the basics of makeup! I'll teach the latest
+						styles, techniques, and how to use your makeup!</p>
+					<div class="service-price">From $50<span> / hour</span></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Portfolio Section -->
+	<section id="portfolio" class="portfolio">
+		<div class="portfolio-container">
+			<div class="section-header">
+				<h2>Portfolio</h2>
+				<p>Feel free to scroll through my latest makeup looks!</p>
+			</div>
+
+			<div class="portfolio-filter">
+				<button class="filter-btn active" data-filter="all">All</button>
+				<button class="filter-btn" data-filter="bridal">Bridal</button>
+				<button class="filter-btn" data-filter="event">Events</button>
+				<button class="filter-btn" data-filter="creative">Creative</button>
+			</div>
+
+			<div class="portfolio-grid">
+				<div class="portfolio-item" data-category="bridal">
+					<img src="images/portfolio1.jpg" alt="Bridal Makeup">
+					<div class="portfolio-overlay">
+						<h3>Elegant Bride</h3>
+						<p>Soft romantic look for a summer wedding</p>
+					</div>
+				</div>
+
+				<div class="portfolio-item" data-category="event">
+					<img src="images/portfolio2.jpg" alt="Event Makeup">
+					<div class="portfolio-overlay">
+						<h3>Night Out Glam</h3>
+						<p>Sparkling eyes for a special evening</p>
+					</div>
+				</div>
+
+				<div class="portfolio-item" data-category="creative">
+					<img src="images/portfolio3.jpg" alt="Creative Makeup">
+					<div class="portfolio-overlay">
+						<h3>Artistic Expression</h3>
+						<p>Editorial look for a photoshoot</p>
+					</div>
+				</div>
+
+				<div class="portfolio-item" data-category="bridal">
+					<img src="images/portfolio4.jpg" alt="Bridal Makeup">
+					<div class="portfolio-overlay">
+						<h3>Classic Bride</h3>
+						<p>Timeless beauty for a traditional wedding</p>
+					</div>
+				</div>
+
+				<div class="portfolio-item" data-category="event">
+					<img src="images/portfolio5.jpg" alt="Event Makeup">
+					<div class="portfolio-overlay">
+						<h3>Colorful Fantasy</h3>
+						<p>Vibrant look for a creative project</p>
+					</div>
+				</div>
+
+				<div class="portfolio-item" data-category="creative">
+					<img src="images/portfolio6.jpg" alt="Creative Makeup">
+					<div class="portfolio-overlay">
+						<h3>Haunting Glam</h3>
+						<p>Spellbinding beauty for spooky nights</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section id="contact" class="contact">
+		<div class="section-header light">
+			<h2>Contact Me!</h2>
+			<p>Ready to look your best? Contact me below!</p>
+		</div>
+
+		<div class="contact-container">
+			<form id="whatsappForm" class="contact-form" onsubmit="sendWhatsAppMessage(event)">
+				<div class="form-grid">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" id="name" required>
+					</div>
+
+					<div class="form-group">
+						<label for="event">Event Type</label>
+						<select id="event" required>
+							<option value="" disabled selected>Select One</option>
+							<option value="Bridal Makeup">Bridal Makeup</option>
+							<option value="Party Makeup">Party Makeup</option>
+							<option value="Photoshoot">Photoshoot</option>
+							<option value="1-on-1 Lesson">1-on-1 Lesson</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label for="date">Event Date</label>
+						<input type="date" id="date" required>
+					</div>
+
+					<div class="form-group">
+						<label for="time">Preferred Time</label>
+						<input type="time" id="time">
+					</div>
+
+					<div class="form-group full">
+						<label for="message">Additional Notes</label>
+						<textarea id="message" placeholder="Any specific requests, allergies, or details..."></textarea>
+					</div>
+				</div>
+
+				<button type="submit" class="submit-btn">Send via WhatsApp</button>
+			</form>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer-container">
+			<div class="footer-about">
+				<h3>Glammed By Kira</h3>
+				<p>Professional makeup artist specializing in bridal, event, and editorial makeup in the Toronto area.
+				</p>
+				<div class="social-links">
+					<a href="https://www.facebook.com/kira.visser.1/"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.instagram.com/kiki_glammed/"><i class="fab fa-instagram"></i></a>
+					<a href="mailto:kiragalliamova@gmail.com"><i class="far fa-envelope"></i></a>
+				</div>
+			</div>
+
+			<div class="footer-contact">
+				<h3>Get In Touch</h3>
+				<ul class="contact-info">
+					<li>
+						<i class="fas fa-map-marker-alt"></i>
+						<span>Toronto, Ontario</span>
+					</li>
+					<li>
+						<i class="fas fa-phone-alt"></i>
+						<span>+1 (647) 564-5598</span>
+					</li>
+					<li>
+						<i class="far fa-envelope"></i>
+						<span>kiragalliamova@gmail.com</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="copyright">
+				<p>&copy; 2023 Glammed By Kira. All rights reserved.</p>
+			</div>
+		</div>
+	</footer>
+
+	<script>
+		// Mobile menu toggle
+		const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+		const navLinks = document.querySelector('.nav-links');
+
+		mobileMenuBtn.addEventListener('click', () => {
+			navLinks.classList.toggle('active');
+			mobileMenuBtn.innerHTML = navLinks.classList.contains('active') ?
+				'<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+		});
+
+		// Portfolio filtering
+		const filterBtns = document.querySelectorAll('.filter-btn');
+		const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+		filterBtns.forEach(btn => {
+			btn.addEventListener('click', () => {
+				// Remove active class from all buttons
+				filterBtns.forEach(b => b.classList.remove('active'));
+				// Add active class to clicked button
+				btn.classList.add('active');
+
+				const filter = btn.getAttribute('data-filter');
+
+				portfolioItems.forEach(item => {
+					if (filter === 'all' || item.getAttribute('data-category') === filter) {
+						item.style.display = 'block';
+					} else {
+						item.style.display = 'none';
+					}
+				});
+			});
+		});
+
+		// WhatsApp form submission
+		function sendWhatsAppMessage(e) {
+			e.preventDefault();
+
+			const name = document.getElementById("name").value.trim();
+			const event = document.getElementById("event").value;
+			const date = document.getElementById("date").value;
+			const time = document.getElementById("time").value;
+			const notes = document.getElementById("message").value.trim();
+
+			const phoneNumber = "16475645598";
+
+			let finalMessage = `Hey Kira! 💄\n\nI’d like to book a makeup session.\n\nName: ${name}\nEvent Type: ${event}\nDate: ${date}`;
+
+			if (time) finalMessage += `\nTime: ${time}`;
+			if (notes) finalMessage += `\n\nNotes:\n${notes}`;
+
+			const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(finalMessage)}`;
+
+			window.open(url, "_blank");
+		}
+
+		// Smooth scrolling for navigation links
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				navLinks.classList.remove('active');
+				mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+
+				const target = document.querySelector(this.getAttribute('href'));
+				if (target) {
+					window.scrollTo({
+						top: target.offsetTop - 80,
+						behavior: 'smooth'
+					});
+				}
+			});
+		});
+
+		// Add scroll animation to elements
+		const observerOptions = {
+			root: null,
+			rootMargin: '0px',
+			threshold: 0.1
+		};
+
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					entry.target.classList.add('visible');
+				}
+			});
+		}, observerOptions);
+
+		document.querySelectorAll('.about-container, .service-card, .portfolio-item').forEach(el => {
+			el.classList.add('fade-in');
+			observer.observe(el);
+		});
+	</script>
+</body>
+
 </html>
