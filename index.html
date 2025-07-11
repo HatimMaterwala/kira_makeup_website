@@ -533,23 +533,12 @@
             opacity: 1;
         }
 
-        /* Contact Section */
-        .contact {
+        /* Testimonials Section */
+        .testimonials {
             background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
             color: white;
             position: relative;
-        }
-
-        .contact:before {
-            content: '';
-            position: absolute;
-            top: -100px;
-            left: 0;
-            right: 0;
-            height: 200px;
-            background: white;
-            transform: skewY(2deg);
-            transform-origin: top right;
+            padding: 100px 20px;
         }
 
         .section-header.light h2,
@@ -561,6 +550,88 @@
             background: var(--gold);
         }
 
+        .testimonials-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .testimonial-card:before {
+            content: '"';
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            font-family: 'Playfair Display', serif;
+            font-size: 120px;
+            color: rgba(255, 255, 255, 0.2);
+            line-height: 1;
+        }
+
+        .testimonial-content {
+            font-size: 1.2rem;
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .client-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .client-avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+            border: 3px solid var(--gold);
+        }
+
+        .client-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .client-details h4 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+            color: var(--gold);
+        }
+
+        .client-details p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .quote-icon {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            color: var(--gold);
+            font-size: 2rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--light);
+            position: relative;
+        }
+
         .contact-container {
             max-width: 900px;
             margin: 0 auto;
@@ -569,12 +640,10 @@
         }
 
         .contact-form {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+            background: white;
             border-radius: 20px;
             padding: 50px;
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
         }
 
         .form-grid {
@@ -596,36 +665,35 @@
             display: block;
             margin-bottom: 8px;
             font-weight: 500;
+            color: var(--dark);
         }
 
         input, select, textarea {
             width: 100%;
             padding: 15px;
-            border: none;
-            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid #ddd;
             border-radius: 10px;
-            color: white;
             font-family: 'Montserrat', sans-serif;
             font-size: 1rem;
             transition: var(--transition);
-            border: 1px solid transparent;
+            background: #fafafa;
         }
 
         /* Fix for dropdown options */
         select option {
-            background: var(--primary);
-            color: white;
+            background: white;
+            color: var(--dark);
         }
 
         select:focus option:checked {
-            background: var(--accent);
-            color: white;
+            background: var(--accent-light);
+            color: var(--dark);
         }
 
         input:focus, select:focus, textarea:focus {
             outline: none;
-            background: rgba(255, 255, 255, 0.25);
-            border-color: var(--gold);
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(138, 90, 124, 0.1);
         }
 
         textarea {
@@ -633,13 +701,9 @@
             resize: vertical;
         }
 
-        ::placeholder {
-            color: rgba(255, 255, 255, 0.7);
-        }
-
         .submit-btn {
-            background: var(--gold);
-            color: var(--dark);
+            background: var(--primary);
+            color: white;
             border: none;
             padding: 16px 40px;
             font-size: 1.1rem;
@@ -654,7 +718,7 @@
         }
 
         .submit-btn:hover {
-            background: white;
+            background: var(--primary-light);
             transform: translateY(-3px);
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
         }
@@ -833,7 +897,8 @@
                 font-size: 2.3rem;
             }
             
-            .contact-form {
+            .contact-form,
+            .testimonial-card {
                 padding: 30px;
             }
             
@@ -841,13 +906,6 @@
             .services:before {
                 height: 120px;
                 transform: skewY(-3deg);
-            }
-            
-            /* FIX: Contact section top skew on mobile */
-            .contact:before {
-                height: 120px;
-                top: -60px;
-                transform: skewY(3deg);
             }
             
             /* FIX: Improve section header spacing on mobile */
@@ -862,6 +920,12 @@
             .section-header p {
                 font-size: 1rem;
                 margin-top: 15px;
+            }
+            
+            .testimonial-card:before {
+                font-size: 80px;
+                top: 20px;
+                left: 20px;
             }
         }
 
@@ -887,7 +951,8 @@
                 padding: 30px 20px;
             }
             
-            .contact-form {
+            .contact-form,
+            .testimonial-card {
                 padding: 20px 15px;
             }
             
@@ -895,13 +960,6 @@
             .services:before {
                 height: 80px;
                 transform: skewY(-4deg);
-            }
-            
-            /* FIX: Contact section top skew on small mobile */
-            .contact:before {
-                height: 80px;
-                top: -40px;
-                transform: skewY(4deg);
             }
             
             /* FIX: Improve portfolio filtering buttons on mobile */
@@ -946,6 +1004,16 @@
             input, select, textarea {
                 padding: 12px;
                 font-size: 0.95rem;
+            }
+            
+            .client-info {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .client-avatar {
+                margin-right: 0;
+                margin-bottom: 15px;
             }
         }
         
@@ -1010,6 +1078,7 @@
                 <li><a href="#about" class="active">Me</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
                 <li><a href="#contact">Get Started</a></li>
             </ul>
         </div>
@@ -1021,7 +1090,7 @@
             <img src="images/makeup_vector.png" alt="Makeup Logo">
         </div>
         <div class="header-content">
-            <h1>Kira Gallaimova Makeup</h1>
+            <h1>Kira Galliamova Makeup</h1>
             <p>Professional Makeup Artist in Toronto</p>
             <div class="header-btns">
                 <a href="#contact" class="btn">Book Your Session</a>
@@ -1041,7 +1110,7 @@
                 <p>✨ A proud graduate of the Seneca Polytechnic (2025), I bring passion, precision, and a touch of magic to every look I create.</p>
                 <p>Whether it's your wedding day, a photoshoot, or a night out, I'm here to help you feel confident, radiant, and unforgettable. Let’s create something beautiful together!</p>
                 <a href="#contact" class="btn" style="background: var(--primary);">Book Your Glow-Up</a>
-                <div class="signature">Kira Gallaimova</div>
+                <div class="signature">Kira Galliamova</div>
             </div>
         </div>
     </section>
@@ -1093,7 +1162,7 @@
                         <li>Light waves <span class="service-price-tag">$25</span></li>
                         <li>Straight hair <span class="service-price-tag">$20</span></li>
                         <li>Up do/slick back <span class="service-price-tag">$25</span></li>
-                        <li>French/Dutch braids <span class="service-price-tag">$25</span></li>
+                        <div>French/Dutch braids <span class="service-price-tag">$25</span></div>
                     </ul>
                     <p class="service-note">Hair services can be combined with makeup</p>
                 </div>
@@ -1141,11 +1210,11 @@
                     </div>
                 </div>
                 
-                <div class="portfolio-item" data-category="creative">
+                <div class="portfolio-item" data-category="bridal">
                     <img src="images/portfolio4.jpg" alt="Bridal Makeup">
                     <div class="portfolio-overlay">
-                        <h3>Valentine’s Vibes</h3>
-                        <p>Soft pink glam with heart details for a dreamy date night look.</p>
+                        <h3>Classic Bride</h3>
+                        <p>Timeless beauty for a traditional wedding</p>
                     </div>
                 </div>
                 
@@ -1164,13 +1233,48 @@
                         <p>Vibrant look for a creative project</p>
                     </div>
                 </div>
+
+                <div class="portfolio-item" data-category="creative">
+                    <img src="images/portfolio7.jpg" alt="bridal">
+                    <div class="portfolio-overlay">
+                        <h3>Colorful Fantasy</h3>
+                        <p>Vibrant look for a creative project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="section-header light">
+            <h2>Client Testimonials</h2>
+            <p>Hear what my clients have to say about their experience</p>
+        </div>
+        
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    Hi Kira! I just wanted to say how much I loved the makeup you did for my graduation! It stayed flawless all day long! I was obsessed with the lashes, and honestly, everyone kept asking where I got my makeup done! Thank you for your professional, supportive approach. You made me feel beautiful and confident on such an important day. I’m so glad I chose you!
+                </div>
+                <div class="client-info">
+                    <div class="client-avatar">
+                        <img src="images/reviewer.jpg" alt="Graduation Client">
+                    </div>
+                    <div class="client-details">
+                        <h4>Sevval</h4>
+                    </div>
+                </div>
+                <div class="quote-icon">
+                    <i class="fas fa-quote-right"></i>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="section-header light">
+        <div class="section-header">
             <h2>Contact Me!</h2>
             <p>Ready to look your best? Contact me below!</p>
         </div>
@@ -1190,9 +1294,7 @@
                             <option value="Bridal Makeup">Bridal Makeup</option>
                             <option value="Party Makeup">Party Makeup</option>
                             <option value="Photoshoot">Photoshoot</option>
-                            <option value="Makeup Lesson">Makeup Lesson</option>
-                            <option value="Hair Service">Hair Service</option>
-                            <option value="Other">Other</option>
+                            <option value="1-on-1 Lesson">1-on-1 Lesson</option>
                         </select>
                     </div>
                     
