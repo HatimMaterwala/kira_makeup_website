@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="images/logo_landing_page.png">
     <style>
@@ -36,7 +38,12 @@
             overflow-x: hidden;
         }
 
-        h1, h2, h3, h4, h5, h6 {
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
             font-family: 'Playfair Display', serif;
             font-weight: 600;
             color: var(--dark);
@@ -460,7 +467,8 @@
             transition: var(--transition);
         }
 
-        .filter-btn.active, .filter-btn:hover {
+        .filter-btn.active,
+        .filter-btn:hover {
             background: var(--primary);
             color: white;
         }
@@ -668,7 +676,9 @@
             color: var(--dark);
         }
 
-        input, select, textarea {
+        input,
+        select,
+        textarea {
             width: 100%;
             padding: 15px;
             border: 1px solid #ddd;
@@ -690,7 +700,9 @@
             color: var(--dark);
         }
 
-        input:focus, select:focus, textarea:focus {
+        input:focus,
+        select:focus,
+        textarea:focus {
             outline: none;
             border-color: var(--primary);
             box-shadow: 0 0 0 3px rgba(138, 90, 124, 0.1);
@@ -835,24 +847,24 @@
                 grid-template-columns: 1fr;
                 gap: 40px;
             }
-            
+
             .about-image {
                 max-width: 600px;
                 margin: 0 auto;
             }
-            
+
             .form-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             .form-group.full {
                 grid-column: span 1;
             }
-            
+
             .footer-container {
                 grid-template-columns: 1fr;
             }
-            
+
             .copyright {
                 grid-column: span 1;
             }
@@ -862,11 +874,11 @@
             .header-content h1 {
                 font-size: 3rem;
             }
-            
+
             .header-content p {
                 font-size: 1.2rem;
             }
-            
+
             .nav-links {
                 position: fixed;
                 top: 80px;
@@ -880,48 +892,48 @@
                 clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
                 transition: var(--transition);
             }
-            
+
             .nav-links.active {
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             }
-            
+
             .nav-links li {
                 margin: 15px 0;
             }
-            
+
             .mobile-menu-btn {
                 display: block;
             }
-            
+
             .section-header h2 {
                 font-size: 2.3rem;
             }
-            
+
             .contact-form,
             .testimonial-card {
                 padding: 30px;
             }
-            
+
             /* FIX: Services section top skew on mobile */
             .services:before {
                 height: 120px;
                 transform: skewY(-3deg);
             }
-            
+
             /* FIX: Improve section header spacing on mobile */
             .section-header {
                 margin: 0 auto 40px;
             }
-            
+
             .section-header h2 {
                 font-size: 2.2rem;
             }
-            
+
             .section-header p {
                 font-size: 1rem;
                 margin-top: 15px;
             }
-            
+
             .testimonial-card:before {
                 font-size: 80px;
                 top: 20px;
@@ -933,132 +945,135 @@
             section {
                 padding: 70px 20px;
             }
-            
+
             .header-content h1 {
                 font-size: 2.5rem;
             }
-            
+
             .btn {
                 padding: 12px 25px;
                 font-size: 0.9rem;
             }
-            
+
             .about-content h2 {
                 font-size: 2rem;
             }
-            
+
             .service-card {
                 padding: 30px 20px;
             }
-            
+
             .contact-form,
             .testimonial-card {
                 padding: 20px 15px;
             }
-            
+
             /* FIX: Services section top skew on small mobile */
             .services:before {
                 height: 80px;
                 transform: skewY(-4deg);
             }
-            
+
             /* FIX: Improve portfolio filtering buttons on mobile */
             .portfolio-filter {
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             .filter-btn {
                 width: 100%;
                 max-width: 200px;
                 margin: 5px 0;
             }
-            
+
             /* FIX: Center align section headers on mobile */
             .section-header h2 {
                 text-align: center;
                 width: 100%;
             }
-            
+
             .section-header h2:after {
                 left: 50%;
                 transform: translateX(-50%);
             }
-            
+
             /* FIX: Adjust service card padding on mobile */
             .service-card {
                 padding: 25px 15px;
             }
-            
+
             .service-icon {
                 width: 70px;
                 height: 70px;
                 font-size: 1.8rem;
             }
-            
+
             .service-card h3 {
                 font-size: 1.4rem;
             }
-            
+
             /* FIX: Contact form input sizes */
-            input, select, textarea {
+            input,
+            select,
+            textarea {
                 padding: 12px;
                 font-size: 0.95rem;
             }
-            
+
             .client-info {
                 flex-direction: column;
                 text-align: center;
             }
-            
+
             .client-avatar {
                 margin-right: 0;
                 margin-bottom: 15px;
             }
         }
-        
+
         @media (max-width: 480px) {
+
             /* FIX: Header height on very small screens */
             .header-container {
                 min-height: 600px;
             }
-            
+
             .header-content h1 {
                 font-size: 2.2rem;
             }
-            
+
             .header-content p {
                 font-size: 1.1rem;
             }
-            
+
             /* FIX: Reduce section padding on very small screens */
             section {
                 padding: 50px 15px;
             }
-            
+
             /* FIX: Portfolio grid on very small screens */
             .portfolio-grid {
                 grid-template-columns: 1fr;
             }
-            
+
             /* FIX: Center align buttons in header */
             .header-btns {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
-            
+
             .btn {
                 margin: 8px 0;
                 width: 100%;
                 max-width: 250px;
             }
-            
+
             /* FIX: Signature alignment on mobile */
             .signature {
                 padding-left: 60px;
             }
-            
+
             .signature:before {
                 width: 50px;
             }
@@ -1107,8 +1122,10 @@
             </div>
             <div class="about-content">
                 <h2>Hey, I'm Kira —<br>Your Go-To Makeup Artist in Toronto!</h2>
-                <p>✨ A proud graduate of the Seneca Polytechnic (2025), I bring passion, precision, and a touch of magic to every look I create.</p>
-                <p>Whether it's your wedding day, a photoshoot, or a night out, I'm here to help you feel confident, radiant, and unforgettable. Let’s create something beautiful together!</p>
+                <p>✨ A proud graduate of the Seneca Polytechnic (2025), I bring passion, precision, and a touch of magic
+                    to every look I create.</p>
+                <p>Whether it's your wedding day, a photoshoot, or a night out, I'm here to help you feel confident,
+                    radiant, and unforgettable. Let’s create something beautiful together!</p>
                 <a href="#contact" class="btn" style="background: var(--primary);">Book Your Glow-Up</a>
                 <div class="signature">Kira Galliamova</div>
             </div>
@@ -1122,7 +1139,7 @@
                 <h2>My Services</h2>
                 <p>Professional makeup and hair services with transparent pricing</p>
             </div>
-            
+
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">
@@ -1137,7 +1154,7 @@
                         <li>Touch up (per hour) <span class="service-price-tag">$40</span></li>
                     </ul>
                 </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-paint-brush"></i>
@@ -1152,7 +1169,7 @@
                     </ul>
                     <p class="service-note">Lashes can be added to any makeup service</p>
                 </div>
-                
+
                 <div class="service-card">
                     <div class="service-icon">
                         <i class="fas fa-cut"></i>
@@ -1177,31 +1194,32 @@
                 <h2>Portfolio</h2>
                 <p>Feel free to scroll through my latest makeup looks!</p>
             </div>
-            
+
             <div class="portfolio-filter">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="bridal">Bridal</button>
-                <button class="filter-btn" data-filter="event">Events</button>
+                <button class="filter-btn" data-filter="SFX">SFX</button>
                 <button class="filter-btn" data-filter="creative">Creative</button>
+                <button class="filter-btn" data-filter="photoshoot">Photoshoot</button>
+                <button class="filter-btn" data-filter="soft">Soft Glam</button>
             </div>
-            
+
             <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="bridal">
+                <div class="portfolio-item" data-category="soft">
                     <img src="images/portfolio1.jpg" alt="Bridal Makeup">
                     <div class="portfolio-overlay">
-                        <h3>Elegant Bride</h3>
-                        <p>Soft romantic look for a summer wedding</p>
+                        <h3>Natural Soft Glam</h3>
                     </div>
                 </div>
-                
-                <div class="portfolio-item" data-category="event">
+
+                <div class="portfolio-item" data-category="creative">
                     <img src="images/portfolio2.jpg" alt="Event Makeup">
                     <div class="portfolio-overlay">
                         <h3>Night Out Glam</h3>
                         <p>Sparkling eyes for a special evening</p>
                     </div>
                 </div>
-                
+
                 <div class="portfolio-item" data-category="creative">
                     <img src="images/portfolio3.jpg" alt="Creative Makeup">
                     <div class="portfolio-overlay">
@@ -1209,25 +1227,77 @@
                         <p>Editorial look for a photoshoot</p>
                     </div>
                 </div>
-                
-                <div class="portfolio-item" data-category="bridal">
+
+                <div class="portfolio-item" data-category="creative">
                     <img src="images/portfolio4.jpg" alt="Bridal Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Creative</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="creative">
+                    <img src="images/portfolio5.jpg" alt="Event Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Colorful Fantasy</h3>
+                        <p>Vibrant look for a creative project</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="bridal">
+                    <img src="images/portfolio7.jpg" alt="bridal">
                     <div class="portfolio-overlay">
                         <h3>Classic Bride</h3>
                         <p>Timeless beauty for a traditional wedding</p>
                     </div>
                 </div>
-                
-                <div class="portfolio-item" data-category="event">
-                    <img src="images/portfolio5.jpg" alt="Event Makeup">
+
+                <div class="portfolio-item" data-category="bridal">
+                    <img src="images/portfolio8.jpg" alt="bridal">
                     <div class="portfolio-overlay">
-                        <h3>Graduation Glow</h3>
-                        <p>Fresh faced look for graduation day</p>
+                        <h3>Classic Bride</h3>
+                        <p>Timeless beauty for a traditional wedding</p>
                     </div>
                 </div>
-                
+
+                <div class="portfolio-item" data-category="bridal">
+                    <img src="images/portfolio9.jpg" alt="bridal">
+                    <div class="portfolio-overlay">
+                        <h3>Classic Bride</h3>
+                        <p>Timeless beauty for a traditional wedding</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="bridal">
+                    <img src="images/portfolio10.jpg" alt="bridal">
+                    <div class="portfolio-overlay">
+                        <h3>Classic Bride</h3>
+                        <p>Timeless beauty for a traditional wedding</p>
+                    </div>
+                </div>
+
                 <div class="portfolio-item" data-category="creative">
-                    <img src="images/portfolio6.jpg" alt="Creative Makeup">
+                    <img src="images/portfolio11.jpg" alt="bridal">
+                    <div class="portfolio-overlay">
+                        <h3>Colorful Fantasy</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="creative">
+                    <img src="images/portfolio12.jpg" alt="bridal">
+                    <div class="portfolio-overlay">
+                        <h3>Colorful Fantasy</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="creative">
+                    <img src="images/portfolio13.jpg" alt="bridal">
+                    <div class="portfolio-overlay">
+                        <h3>Colorful Fantasy</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="creative">
+                    <img src="images/portfolio14.jpg" alt="Creative Makeup">
                     <div class="portfolio-overlay">
                         <h3>Colorful Fantasy</h3>
                         <p>Vibrant look for a creative project</p>
@@ -1235,12 +1305,109 @@
                 </div>
 
                 <div class="portfolio-item" data-category="creative">
-                    <img src="images/portfolio7.jpg" alt="bridal">
+                    <img src="images/portfolio15.jpg" alt="Creative Makeup">
                     <div class="portfolio-overlay">
                         <h3>Colorful Fantasy</h3>
                         <p>Vibrant look for a creative project</p>
                     </div>
                 </div>
+
+                <div class="portfolio-item" data-category="creative">
+                    <img src="images/portfolio16.jpg" alt="Creative Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Colorful Fantasy</h3>
+                        <p>Vibrant look for a creative project</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="creative">
+                    <img src="images/portfolio17.jpg" alt="Creative Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Colorful Fantasy</h3>
+                        <p>Vibrant look for a creative project</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="SFX">
+                    <img src="images/portfolio6.jpg" alt="Creative Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>SFX Makeup</h3>
+                        <p>Special Effects</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="SFX">
+                    <img src="images/portfolio18.jpg" alt="Creative Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>SFX Makeup</h3>
+                        <p>Special Effects</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="SFX">
+                    <img src="images/portfolio19.jpg" alt="Creative Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>SFX Makeup</h3>
+                        <p>Special Effects</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="photoshoot">
+                    <img src="images/portfolio20.jpg" alt="Creative Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Photo or Video Shoot</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="photoshoot">
+                    <img src="images/portfolio21.jpg" alt="Creative Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Photo or Video Shoot</h3>
+                    </div>
+                </div>
+
+                 <div class="portfolio-item" data-category="photoshoot">
+                    <img src="images/portfolio22.jpg" alt="Creative Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Photo or Video Shoot</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="photoshoot">
+                    <img src="images/portfolio23.jpg" alt="Creative Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Photo or Video Shoot</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="photoshoot">
+                    <img src="images/portfolio24.jpg" alt="Creative Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Photo or Video Shoot</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="photoshoot">
+                    <img src="images/portfolio25.jpg" alt="Creative Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Photo or Video Shoot</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="soft">
+                    <img src="images/portfolio26.jpg" alt="Creative Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Photo or Video Shoot</h3>
+                    </div>
+                </div>
+
+                <div class="portfolio-item" data-category="soft">
+                    <img src="images/portfolio27.jpg" alt="Bridal Makeup">
+                    <div class="portfolio-overlay">
+                        <h3>Natural Soft Glam</h3>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -1251,11 +1418,14 @@
             <h2>Client Testimonials</h2>
             <p>Hear what my clients have to say about their experience</p>
         </div>
-        
+
         <div class="testimonials-container">
             <div class="testimonial-card">
                 <div class="testimonial-content">
-                    Hi Kira! I just wanted to say how much I loved the makeup you did for my graduation! It stayed flawless all day long! I was obsessed with the lashes, and honestly, everyone kept asking where I got my makeup done! Thank you for your professional, supportive approach. You made me feel beautiful and confident on such an important day. I’m so glad I chose you!
+                    Hi Kira! I just wanted to say how much I loved the makeup you did for my graduation! It stayed
+                    flawless all day long! I was obsessed with the lashes, and honestly, everyone kept asking where I
+                    got my makeup done! Thank you for your professional, supportive approach. You made me feel beautiful
+                    and confident on such an important day. I’m so glad I chose you!
                 </div>
                 <div class="client-info">
                     <div class="client-avatar">
@@ -1263,6 +1433,7 @@
                     </div>
                     <div class="client-details">
                         <h4>Sevval</h4>
+                        <p>Graduation Client</p>
                     </div>
                 </div>
                 <div class="quote-icon">
@@ -1278,7 +1449,7 @@
             <h2>Contact Me!</h2>
             <p>Ready to look your best? Contact me below!</p>
         </div>
-        
+
         <div class="contact-container">
             <form id="whatsappForm" class="contact-form" onsubmit="sendWhatsAppMessage(event)">
                 <div class="form-grid">
@@ -1286,7 +1457,7 @@
                         <label for="name">Name</label>
                         <input type="text" id="name" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="event">Event Type</label>
                         <select id="event" required>
@@ -1297,23 +1468,23 @@
                             <option value="1-on-1 Lesson">1-on-1 Lesson</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="date">Event Date</label>
                         <input type="date" id="date" required>
                     </div>
-                    
+
                     <div class="form-group">
                         <label for="time">Preferred Time</label>
                         <input type="time" id="time">
                     </div>
-                    
+
                     <div class="form-group full">
                         <label for="message">Additional Notes</label>
                         <textarea id="message" placeholder="Any specific requests, allergies, or details..."></textarea>
                     </div>
                 </div>
-                
+
                 <button type="submit" class="submit-btn">Send via WhatsApp</button>
             </form>
         </div>
@@ -1324,14 +1495,15 @@
         <div class="footer-container">
             <div class="footer-about">
                 <h3>Glammed By Kira</h3>
-                <p>Professional makeup artist specializing in bridal, event, and editorial makeup in the Toronto area.</p>
+                <p>Professional makeup artist specializing in bridal, event, and editorial makeup in the Toronto area.
+                </p>
                 <div class="social-links">
                     <a href="https://www.facebook.com/kira.visser.1/"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.instagram.com/kiki_glammed/"><i class="fab fa-instagram"></i></a>
                     <a href="mailto:kiragalliamova@gmail.com"><i class="far fa-envelope"></i></a>
                 </div>
             </div>
-            
+
             <div class="footer-contact">
                 <h3>Get In Touch</h3>
                 <ul class="contact-info">
@@ -1349,7 +1521,7 @@
                     </li>
                 </ul>
             </div>
-            
+
             <div class="copyright">
                 <p>&copy; 2023 Glammed By Kira. All rights reserved.</p>
             </div>
@@ -1360,26 +1532,26 @@
         // Mobile menu toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const navLinks = document.querySelector('.nav-links');
-        
+
         mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') ? 
+            mobileMenuBtn.innerHTML = navLinks.classList.contains('active') ?
                 '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
         });
-        
+
         // Portfolio filtering
         const filterBtns = document.querySelectorAll('.filter-btn');
         const portfolioItems = document.querySelectorAll('.portfolio-item');
-        
+
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 // Remove active class from all buttons
                 filterBtns.forEach(b => b.classList.remove('active'));
                 // Add active class to clicked button
                 btn.classList.add('active');
-                
+
                 const filter = btn.getAttribute('data-filter');
-                
+
                 portfolioItems.forEach(item => {
                     if (filter === 'all' || item.getAttribute('data-category') === filter) {
                         item.style.display = 'block';
@@ -1389,7 +1561,7 @@
                 });
             });
         });
-        
+
         // WhatsApp form submission
         function sendWhatsAppMessage(e) {
             e.preventDefault();
@@ -1400,7 +1572,7 @@
             const time = document.getElementById("time").value;
             const notes = document.getElementById("message").value.trim();
 
-            const phoneNumber = "16475645598"; 
+            const phoneNumber = "16475645598";
 
             let finalMessage = `Hey Kira! 💄\n\nI’d like to book a makeup session.\n\nName: ${name}\nEvent Type: ${event}\nDate: ${date}`;
 
@@ -1411,15 +1583,15 @@
 
             window.open(url, "_blank");
         }
-        
+
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 navLinks.classList.remove('active');
                 mobileMenuBtn.innerHTML = '<i class="fas fa-bars"></i>';
-                
+
                 const target = document.querySelector(this.getAttribute('href'));
                 if (target) {
                     window.scrollTo({
@@ -1429,14 +1601,14 @@
                 }
             });
         });
-        
+
         // Add scroll animation to elements
         const observerOptions = {
             root: null,
             rootMargin: '0px',
             threshold: 0.1
         };
-        
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
@@ -1444,11 +1616,12 @@
                 }
             });
         }, observerOptions);
-        
+
         document.querySelectorAll('.about-container, .service-card, .portfolio-item').forEach(el => {
             el.classList.add('fade-in');
             observer.observe(el);
         });
     </script>
 </body>
+
 </html>
